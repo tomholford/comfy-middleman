@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Home",
+    "url": "/",
+    "isActiveKey": "Home"
+  },
+  {
+    "label": "About",
+    "url": "/about.html",
+    "isActiveKey": "About"
+  }
+]

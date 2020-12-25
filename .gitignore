@@ -1,0 +1,11 @@
+.bundle
+.cache
+.DS_Store
+.firebase
+.parcel-cache
+.sass-cache
+*.log
+build
+dist
+node_modules
+secrets

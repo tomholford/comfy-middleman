@@ -1,0 +1,5 @@
+customize_by_frontmatter: true
+site: My Website
+host: https://mywebsite.com/
+description: Welcome to my website
+keywords: example, another example

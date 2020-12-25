@@ -1,0 +1,8 @@
+<% set_meta_tags thumbnail: image_path('logo-lg.png') unless meta_tags[:thumbnail].present? %>
+<%= auto_display_meta_tags %>
+<link
+  rel="alternate"
+  href="<%= host %>/blog/feed.rss"
+  type="application/rss+xml"
+  title="<%= data.site.site %> blog"
+/>

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col">    
+      <% data.breakpoints.each do |bp| %>
+        <div class="<%= bp.classes %>">
+          <button class="btn btn-lg btn-<%= bp.color %>"><%= bp.label %></button>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

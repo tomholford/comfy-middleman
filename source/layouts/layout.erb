@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= partial "meta" %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+    <%= favicon_tag 'favicon.ico' %>
+  </head>
+  <body>
+    <%= partial "debug" unless build? %>
+    <%= partial "header" %>
+    <%= yield %>
+    <% if build? %>
+      <%= partial "analytics" %>
+    <% else %>
+      <!-- analytics snippet here in prod -->
+    <% end %>
+    <%= partial "footer" %>
+  </body>
+</html>

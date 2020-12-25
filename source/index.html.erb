@@ -1,0 +1,34 @@
+---
+title: Home
+---
+<section id="home">
+  <div class="container-fluid">
+    <div class="row mb-3">
+      <div class="col">
+        <!-- image credit: https://unsplash.com/@transly -->
+        <div class="jumbotron">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">Welcome to my website</p>
+          <p>Click the button to do something</p>
+          <button class="btn btn-primary btn-lg" type="button">Call To Action</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 mb-3">
+        <h4>Latest Blog Post</h4>
+        <div>
+          <% if blog.articles.present? %>
+            <h4><%= link_to blog.articles.first.title, blog.articles.first, class: 'text-decoration-none' %> </h4>
+            <%= image_tag blog.articles.first.data.cover, class: 'img-fluid mb-2' %>
+            <p><%= blog.articles.first.summary %></p>
+            <%= link_to 'Continue reading', blog.articles.first, class: 'content-link'  %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 mb-3">
+        <h4>More Content Coming Soon</h4>
+      </div>
+    </div>
+  </div>
+</section>

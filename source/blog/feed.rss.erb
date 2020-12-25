@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <lastBuildDate><%= DateTime.now.utc.rfc822 %></lastBuildDate>
+    <title><%= data.site.site %> blog</title>
+    <link><%= host %>/blog</link>
+    <description><%= data.site.description %></description>
+    <atom:link
+      href="<%= host %>/blog/feed.rss"
+      rel="self"
+      type="application/rss+xml" />
+    <category><%= data.site.category %></category>
+    <copyright>2020 <%= data.site.site %></copyright>
+    <generator>Middleman (Ruby)</generator>
+    <language>en-us</language>
+
+    <% blog.articles %>
+    <% .select { |r| r.is_a? Middleman::Blog::BlogArticle } %>
+    <% .sort { |a, b| a.date <=> b.date }.reverse %>
+    <% .each do |article| %>
+    <item>
+      <title><%= article.title %></title>
+      <link><%= host %>/<%= article.destination_path %></link>
+      <guid><%= host %>/<%= article.destination_path %></guid>
+      <description><%= strip_tags(article.summary) %></description>
+      <pubDate><%= article.date.utc.rfc822 %></pubDate>
+    </item>
+    <% end %>
+  </channel>
+</rss>

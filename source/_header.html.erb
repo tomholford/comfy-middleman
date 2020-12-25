@@ -1,0 +1,26 @@
+<!-- header start -->
+<div class="container mt-3 mb-3">
+  <!-- nav start -->
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-8 col-lg-11 col-xl-9 col-xxl-8">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <% data.header.each do |h| %>
+                <li class="nav-item">
+                    <%= link_to h.label, h.url, class: "nav-link #{active_nav_item?(h.isActiveKey)}" %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- nav end -->
+</div>
+<!-- header end -->

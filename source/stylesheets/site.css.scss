@@ -1,0 +1,17 @@
+@import "./colors.scss";
+@import "./responsive.scss";
+@import "./bootstrap-override.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// // Create your own map
+// $custom-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary
+// );
+
+// $link-color: $primary;
+// $body-bg: $body-bg-color;
+// $body-color: $body-text-color;
+
+// Merge the maps
+// $theme-colors: map-merge($theme-colors, $custom-colors);

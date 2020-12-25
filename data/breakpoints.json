@@ -1,0 +1,32 @@
+[
+  {
+    "label": "xs",
+    "color": "primary",
+    "classes": "d-block d-sm-none"
+  },
+  {
+    "label": "sm",
+    "color": "secondary",
+    "classes": "d-none d-sm-block d-md-none"
+  },
+  {
+    "label": "md",
+    "color": "success",
+    "classes": "d-none d-md-block d-lg-none"
+  },
+  {
+    "label": "lg",
+    "color": "danger",
+    "classes": "d-none d-lg-block d-xl-none"
+  },
+  {
+    "label": "xl",
+    "color": "info",
+    "classes": "d-none d-xl-block d-xxl-none"
+  },
+  {
+    "label": "xxl",
+    "color": "dark",
+    "classes": "d-none d-xxl-block"
+  }
+]
