@@ -20,15 +20,7 @@ Requires `bundler` and `npm`
 
 ### Get the template
 
-1. Clone this repo
-1. Rename the project:
-```sh
-mv comfy-middleman/ my-website/
-```
-1. Navigate to the directoy, remove the git history:
-```sh
-rm -rf .git/
-```
+Click [Use This Template](https://github.com/tomholford/comfy-middleman/generate) above to quickly get started. 
 
 ### Install deps
 
