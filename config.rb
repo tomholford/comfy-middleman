@@ -28,6 +28,7 @@ activate :directory_indexes
 
 configure :build do
   config[:host] = 'https://mywebsite.com'
+  ignore '*.ts'
   activate :favicon_maker do |f|
     f.template_dir  = 'source/images'
     f.output_dir = 'build/images/'
