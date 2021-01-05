@@ -38,7 +38,7 @@ configure :build do
       ]
     }
   end
-  activate :imageoptim do |imgopt|
+  activate :image_optim do |imgopt|
     imgopt.svgo = false
     imgopt.pngout = false
   end
