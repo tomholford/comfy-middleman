@@ -13,3 +13,4 @@ gem 'pry', '~> 0.13'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 gem 'typescript-node', '~> 1.6'
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
+gem 'webrick', '~> 1'
